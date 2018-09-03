@@ -8,3 +8,5 @@ ARG LOGTRAIL_VERSION=0.1.29
 
 RUN kibana-plugin install \
     https://github.com/sivasamyk/logtrail/releases/download/v${LOGTRAIL_VERSION}/logtrail-${KIBANA_VERSION}-${LOGTRAIL_VERSION}.zip
+
+COPY logtrail.json plugins/logtrail/logtrail.json
